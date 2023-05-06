@@ -1,17 +1,16 @@
 #--  Synopsys, Inc.
 #--  Version S-2021.09X-2
-#--  Project file /fpga/vp_project/src/syn/vp_project.prj
-#--  Written on Fri May  5 18:25:25 2023
+#--  Project file /fpga/simple_vp_project/src/syn/vp_project.prj
+#--  Written on Sat May  6 12:20:14 2023
 
 
 #project files
 add_file -verilog "../rtl/default_nettype.v"
 add_file -verilog -vlog_std sysv "../../ace_install_folder/Achronix-linux/libraries/device_models/AC7t1500_synplify.sv"
-add_file -verilog -vlog_std sysv "../rtl/counter.sv"
-add_file -verilog -vlog_std sysv "../rtl/counter_maxparam.sv"
+add_file -verilog -vlog_std sysv "../rtl/lightshow.sv"
+add_file -verilog -vlog_std sysv "../rtl/project_top.sv"
 add_file -constraint "../constraints/synplify_constraints.sdc"
 add_file -constraint "../constraints/ace_constraints.sdc"
-add_file -verilog -vlog_std sysv "../rtl/project_top.sv"
 
 
 #implementation: "rev_1"
